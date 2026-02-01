@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iron Lady Workshop Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Iron Lady Workshop Management</h1>
+
+    <!-- Form to Add/Edit Workshop -->
+    <form id="workshopForm">
+        <input type="text" id="name" placeholder="Workshop Name" required />
+        <input type="text" id="trainer" placeholder="Trainer Name" required />
+        <input type="date" id="date" required />
+        <input type="text" id="location" placeholder="Location" required />
+        <input type="number" id="seats" placeholder="Available Seats" required />
+        <button type="submit"><i class="fa fa-plus"></i> Add Workshop</button>
+    </form>
+
+    <!-- Search bar -->
+    <input type="text" id="searchInput" placeholder="Search by workshop or trainer..." />
+
+    <!-- List of Workshops -->
+    <h2>All Workshops</h2>
+    <ul id="workshopList"></ul>
+</div>
+
+<script src="task2.js"></script>
+</body>
+</html>
